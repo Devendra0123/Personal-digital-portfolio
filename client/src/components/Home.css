@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Palette+Mosaic&family=Sigmar+One&family=Style+Script&family=Zen+Tokyo+Zoo&display=swap&family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+.home {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.home_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_me_image{
+  flex:0.3;
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+
+.home_me_image > h2{
+  text-align: center;
+  background-color: #f8485e;
+  color: white;
+  padding: 5px;
+  letter-spacing: 1.5px;
+  border-radius: 0 0 10px 10px;
+}
+
+.home_me_image > img {
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+ width: 100%;
+}
+
+.hiring_info{
+  background-color: #f8485e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 5px;
+  color: black;
+  padding: 15px;
+}
+
+.hiring_info > p{
+  letter-spacing: 1.3px;
+  word-spacing: 2px;
+}
+
+.hiring_info > a > button{
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid green;
+  border-radius: 25px;
+  color: green;
+  transition: transform 0.25s ease-out;
+}
+
+.hiring_info > a > button:hover{
+  transform: scale(1.1,1.1);
+  background-color: honeydew;
+}
+.home_middle_section {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  margin-right: -20px;
+  align-items: center;
+}
+
+.home_quote {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  word-spacing: 3px;
+}
+
+.home_quote > p {
+  background: pink;
+  padding: 20px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-radius: 15px;
+  margin-top: -15px;
+  z-index: -1;
+  color: rgb(68, 67, 67);
+  font-family: "Style Script", cursive;
+  box-shadow: 10px 20px 50px 10px pink inset;
+}
+
+.home_quote > .home_quote_icon {
+  background: #eeeeee;
+  border-radius: 25px;
+}
+
+.home_middle_section {
+  flex: 0.4;
+  font-family: "Source Code Pro", monospace;
+}
+
+.home_middle_section > .home_intro {
+  width: 100%;
+  margin-top: 30px;
+  background: #f8485e;
+  padding: 20px;
+}
+
+.home_intro > .intro_info {
+  padding: 10px 20px 10px 30px;
+  font-family: "Source Code Pro", monospace;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profession {
+  font-size: 19px;
+  font-weight: 600;
+  color: #eeeeee;
+}
+
+.intro_info > .link > button {
+  background: #f8485e;
+  width: max-content;
+  border: none;
+  padding: 4px 10px;
+  font-size: 22px;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px rgb(109, 82, 82),
+  -3px -3px 5px white;
+  letter-spacing: 1.3px;
+}
+
+.intro_info > .link > button:hover {
+  transform: scale(1.1, 1.2);
+  background: hsl(342, 100%, 45%);
+  color: white;
+  border-radius: 25px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  position: relative;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+
+.skills > .arrow_icon {
+  background: whitesmoke;
+  border-radius: 25px;
+  padding: 3px;
+  cursor: pointer;
+  transition: transform 200 ease-out;
+}
+
+.skills > .arrow_icon:hover{
+  transform: scale(1.1,1.1);
+  opacity: 0.6;
+}
+
+.home_right_section {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background: pink;
+  position: relative;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.home_right_section > h2 {
+  text-align: center;
+  border-bottom: 2px solid white;
+  
+}
+
+.home_right_section > button {
+  margin-top: 30px;
+  padding: 7px 0;
+  font-size: 17px;
+  border-radius: 25px;
+  border: none;
+  background: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.home_rating {
+  text-align: center;
+  background-color: rgba(187, 48, 48, 1);
+  box-shadow: 10px 20px 50px 10px pink inset;
+  padding: 5px;
+}
+
+.home_experience {
+  text-align: center;
+  background: rgba(187, 48, 48, 1);
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 10px 20px 50px 10px pink inset;
+}
+
+@media screen and (max-width: 760px){
+  .home {
+   margin-top: 0px;
+  }
+  .home_quote{
+    display: none;
+  }
+  .home_container{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .home_me_image > img{
+    display: none;
+  }
+  .home_me_image > h2{
+    display: none;
+  }
+  .hiring_info{
+    display: none; 
+  }
+  .home_rating{
+    width: 100%;
+   
+  }
+  .home_rating > h2{
+    font-size: 17px;
+  }
+  .home_middle_section{
+    width: 100%;
+  }
+  .home_middle_section > .home_intro{
+    margin-top: 0;
+  }
+  .home_right_section{
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .home_right_section> button{
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .home_middle_section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .home_intro > .intro_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+  }
+  
+  .intro_info > .link > button {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .home_right_section{
+    width: 98%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

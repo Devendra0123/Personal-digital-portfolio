@@ -1,0 +1,179 @@
+.lpContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+.lpContact > h2 {
+  padding: 5px 20px;
+  border-top: 3px solid #f8485e;
+  border-bottom: 3px solid #f8485e;
+  margin-bottom: 20px;
+  background: rgba(187, 48, 48, 1);
+  box-shadow: 10px 20px 50px 10px pink inset;
+}
+
+.lpContact_container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+  margin-bottom: -30px;
+  padding: 20px;
+  position: relative;
+  
+}
+
+.lpContact_left > form{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(187, 48, 48, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.lpContact_left > form > input{
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+
+.lpContact_left > form > label{
+  letter-spacing: 1.3px;
+  margin-bottom: 5px;
+}
+
+.lpContact_left > form > textarea{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+.send_button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background: #ffeb3b;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.send_button > button{
+  background: none;
+  border: none;
+  color: #B05B3B;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.send_icon{
+  color: #B05B3B !important;
+}
+
+.lpContact_right{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 35%;
+  margin-bottom: 20px;
+}
+
+.lpSocialMedia_logo_image{
+  width: 30px;
+  height: 30px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.lpSocialMedia_logo_image:hover{
+  background: crimson;
+}
+
+.social_media{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 20px;
+}
+
+.social_media_icon{
+  color: rgb(64, 64, 214) !important;
+  margin-top: 2px;
+}
+
+.write_me_at{
+  z-index: 20;
+  font-family: "Source Code Pro", monospace;
+}
+
+.write_me_at > p{
+  color: white;
+}
+
+@media screen and (max-width: 760px){
+  .lpContact{
+    width: 100%;
+  }
+  .lpContact_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .lpContact_left{
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .lpContact_right{
+     flex-direction: row;
+     margin-left: 0px;
+  }
+  .lpContact_left{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .lpContact_container{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .lpContact_left{
+    width: 100%;
+    padding: 0px;
+  }
+  .lpContact_left > form{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .social_media{
+    flex-direction: row;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ .lpSocialMedia_logo_image{
+   margin-left: 5px;
+ }
+}

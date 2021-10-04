@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.singleProject{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.singleProject_container{
+  width: 80%;
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.singleProject_container h1{
+    padding: 5px 20px;
+    border-top: 3px solid #f8485e;
+    border-bottom: 3px solid #f8485e;
+    margin-bottom: 30px;
+    background: rgba(187, 48, 48, 1);
+    box-shadow: 10px 20px 50px 10px pink inset;
+    margin-top: 30px;
+}
+
+.singleProject_images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+.singleProject_images::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.singleProject_images::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+.singleProject_images::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right,transparent,red); 
+    border-radius: 10px;
+  }
+  
+
+.singleProject_images img{
+    object-fit: contain;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.singleProject_languages {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    background: pink;
+    box-shadow: 5px 5px 10px grey,
+                 -5px -5px 10px white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.singleProject_languages p{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.singleProject_description{
+    padding: 20px;
+    width: 70%;
+    background: crimson;
+    color: white;
+    letter-spacing: 1.3px;
+    word-spacing: 3px;
+    border-radius: 15px 15px 0 0;
+}
+
+.singleProject_description p{
+   font-size: 19px;
+   margin-bottom: 20px;
+}
+
+.singleProject_features{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    background: crimson;
+    color: white;
+}
+
+.singleProject_features p{
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.singleProject_charge{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    background: crimson;
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+.singleProject_charge p{
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.singleProject_progressBar{
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 760px){
+    .singleProject_description{
+        width: 100%;
+    }
+    .singleProject_features{
+        width: 100%;
+       
+    }
+    .singleProject_charge{
+        width: 100%;
+    }
+    .singleProject_languages{
+        width: 95%;
+        text-align: center;
+    }
+    .singleProject_progressBar{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .singleProject_container h1{
+        font-size: 20px;
+    }
+    .singleProject_container{
+        width: 100%;
+    }
+    .singleProject_languages{
+        display: none;
+    }
+}

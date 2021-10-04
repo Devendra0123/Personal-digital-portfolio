@@ -1,0 +1,72 @@
+.lpVideo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.lpVideo_quote{
+  margin-bottom: 20px;
+}
+
+.lpVideo > h2 {
+  padding: 5px 20px;
+  border-top: 3px solid #f8485e;
+  border-bottom: 3px solid #f8485e;
+  margin-bottom: 20px;
+  background: rgba(187, 48, 48, 1);
+  box-shadow: 10px 20px 50px 10px pink inset;
+}
+
+.lpVideo_container{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 20px 10px;;
+  align-items: center;
+  background-image: url("https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg")
+}
+
+.player-wrapper {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.player-wrapper iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.lpVideo_quote > h3{
+  font-family: "Source Code Pro", monospace;
+}
+
+@media screen and (max-width: 760px){
+  .lpVideo_container{
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .player-wrapper {
+    width: 350px;
+    height: 250px;
+    position: relative;
+   /* Player ratio: 100 / (1280 / 720) */
+  }
+}
+
+@media screen and (max-width: 400px){
+  .lpVideo_container{
+    width: 100%;  
+  }
+  .player-wrapper {
+    width: 90%;
+    height: 180px;
+    position: relative;
+   /* Player ratio: 100 / (1280 / 720) */
+  }
+}

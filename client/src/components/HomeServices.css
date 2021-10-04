@@ -1,0 +1,18 @@
+.homeService{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.homeService > p{
+  font-size: 18px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+}
+
+.homeService_icon{
+   background: whitesmoke;
+   border-radius: 25px;
+   padding: 5px;
+   margin-right: 10px;
+}

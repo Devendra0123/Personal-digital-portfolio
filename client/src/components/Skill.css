@@ -1,0 +1,12 @@
+.skill{
+  display: flex;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 5px;
+}
+
+.skill > span {
+  border-bottom: 2px solid #DAD0C2;
+  margin-left: 5px;
+  font-weight: 600;
+}
