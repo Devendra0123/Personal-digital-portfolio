@@ -12,6 +12,7 @@ const FileReader = require('filereader');
 const Pusher = require("pusher");
 const multer = require('multer');
 const upload = multer({ dest: 'uploads' });
+const path = require("path");
 
 const app = express();
 
@@ -144,7 +145,7 @@ app.get("/news",async function(req,res){
 });
 
 
-app.post('/projects', upload.array('photos', 12), function (req, res, next) {
+app.post('/api/projects', upload.array('photos', 12), function (req, res, next) {
   // req.files is array of `photos` files
   
 function base64_encode(file) {
@@ -179,7 +180,7 @@ const images = req.files.map(item => {
   // req.body will contain the text fields, if there were any
 });
 
-app.get("/projects", (req,res)=>{
+app.get("/api/projects", (req,res)=>{
   try {
     Projects.find((err, data)=>{
       if(err){
