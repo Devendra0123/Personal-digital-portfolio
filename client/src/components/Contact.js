@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import "./Contact.css";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
@@ -22,7 +22,7 @@ function Contact() {
 
   const classes = useStyles();
 
-  const { handleChange, handleSubmit, values, displayError, loading, success, errors } = useForm();
+  const { handleChange, handleSubmit, values, displayError, loading, success} = useForm();
 
     return (
         <div className="contact">

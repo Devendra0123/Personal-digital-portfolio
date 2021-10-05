@@ -13,6 +13,9 @@ const Pusher = require("pusher");
 const multer = require('multer');
 const upload = multer({ dest: 'uploads' });
 const path = require("path");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 

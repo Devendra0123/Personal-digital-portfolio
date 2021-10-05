@@ -42,7 +42,7 @@ function SingleProject({match}) {
                       {
                         projectData.functionalities.map(feature => {
                           return (
-                            <p> 👌{feature} </p>
+                            <p> <span>👌</span>{feature} </p>
                           )
                         })
                       }

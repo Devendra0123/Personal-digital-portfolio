@@ -130,7 +130,7 @@ function Home() {
           </div>
 
           <div className="home_rating">
-            <h2>Rated around 4.7⭐ out of 5⭐ by clients</h2>
+            <h2>Rated around 4.7<span>⭐</span> out of 5<span>⭐</span> by clients</h2>
           </div>
 
           <div className="home_experience">

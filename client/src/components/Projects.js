@@ -45,7 +45,7 @@ function Projects() {
                   <div className="project_singlproject_body_description">
                     {item.functionalities.map((feature,index) => {
                       return (
-                        <p key={index}> ✍ {feature} </p>
+                        <p key={index}> <span>✍</span> {feature} </p>
                       );
                     })}
                     <a href={`/projects/${item._id}`}>

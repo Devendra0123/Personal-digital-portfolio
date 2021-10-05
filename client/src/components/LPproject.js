@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./LPproject.css";
 import {fetchProjects} from "./projectSlice";
 import {useSelector, useDispatch} from "react-redux";

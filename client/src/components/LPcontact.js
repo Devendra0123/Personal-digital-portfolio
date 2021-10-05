@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 function LPcontact(){
-  const { handleChange, handleSubmit, values, displayError, loading, success, errors } = useForm();
+  const { handleChange, handleSubmit, values, displayError, loading, success } = useForm();
   const classes = useStyles();
   return (
     <div id="contact" className="lpContact">

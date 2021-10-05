@@ -1,6 +1,5 @@
 import React from "react";
 import "./LPvideo.css";
-import ReactPlayer from 'react-player/youtube';
 
 function LPvideo(){
   return (
